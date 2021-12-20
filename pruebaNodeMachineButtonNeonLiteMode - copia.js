@@ -86,7 +86,7 @@ const dataAppCss = `:root {\n
 	pointer-events: none;\n
 }\n
 .Button-header {\n
-	background-color: #400c60; /* bg transparent*/\n
+	background-color: transparent; /*  #400c60; */ /* bg transparent*/\n
 	min-height: 100vh;\n
 	display: grid;\n
 	flex-direction: column;\n
@@ -101,16 +101,15 @@ const dataAppCss = `:root {\n
 	display: inline-block;\n
 	position: relative;\n
 	padding: 0.25em 1em;\n
-	box-shadow: 2px 2px 22px #ffff;\n
 	border: 0.125em solid var(--clr-neon);\n
-	border-radius: 9rem; \n
+	border-radius: 1rem; \n
 	text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.9), 0 0 0.45em currentColor;\n
 	box-shadow: inset 0 0 2rem 0 var(--clr-neon),0 0 4rem 0 var(--clr-neon);\n
-	background-color: transparent;/* color bg */\n
+	background-color: ; /* transparent; */ /* color bg */\n
 	transition: background-color 100ms linear;\n
 	color: var(--clr-neon);\n
 }\n
-.ButtonNeon::after {\n
+.${title}::after {\n
 	content: "";\n
 	position: absolute;\n
 	top: 0;\n
@@ -120,9 +119,9 @@ const dataAppCss = `:root {\n
 	box-shadow: 0 0 2em 0.5rem var(--clr-neon);\n
 	opacity: 0;\n
 	transition: opacity 100ms linear;\n
-	border-radius: 9rem;\n
+	border-radius: 1rem;\n
 }\n
-.ButtonNeon::before {\n
+.${title}::before {\n
 	content: "";\n
 	position: absolute;\n
 	background: var(--clr-neon);\n
@@ -134,18 +133,18 @@ const dataAppCss = `:root {\n
 	transform: perspective(0.99em) rotateX(40deg) scale(1, 0.35);\n
 	filter: blur(1em);\n
 	opacity: 0.7;\n
-	border-radius: 9rem;\n
+	border-radius: 1rem;\n
 }\n
 .${title}:hover ,\n
-.ButtonNeon:focus {\n
+.${title}:focus {\n
 	color: var(--clr-bg);\n
 	background: var(--clr-neon);\n
 	text-shadow: none;\n
-	border-radius: 9rem;\n
+	border-radius: 1rem;\n
 }\n
-.ButtonNeon:hover::after {\n
+.${title}:hover::after {\n
 	opacity: 1;\n
-	border-radius: 9rem;\n
+	border-radius: 1rem;\n
 }` 
 
 fs.promises
@@ -153,7 +152,7 @@ fs.promises
     .then((x) =>
         fs.promises.writeFile(
             v + ac, dataAppCss));
-console.log("[+] Creado:\t" + v + ac, "\t ",title);
+console.log("[+] Creado:\t" + v + ac, "\t ",title,".css");
 // /* $title.css 1.2. I have a file: src/$title.css */
 
 
