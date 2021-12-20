@@ -1,8 +1,19 @@
 # template pruebanodemachine => **ButtonMachine**
-
+only you need create with mkdir .\botonneon\ and .\botonneon\src\
+#### run 
+``` 
+.\botonneon\
+node pruebaNodeMachineButtonNeonLiteMode.js
+``` 
 #### **buttonNeon1**
 
-<img src="botonneon/theme/buttonNeon.png" ref="btn1" />
+<img src="botonneon/theme/buttonNeon.png" ref="btn1" class="fit-image"/>
+
+#### **buttonNeon2**
+<img src="botonneon/theme/btneonblackbg.png" ref="btn2" class="fit-image"/>
+
+#### nodeMachine
+<img src="botonneon/theme/screenshotLiteTrim.png" ref="screenshot" class="fit-image"/>
 
 ```
 // ?$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
